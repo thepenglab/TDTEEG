@@ -15,10 +15,12 @@ Add TDTbin2mat to the Path
 
 Add eglib to the Path
 
+Download sample data from the link: https://drive.google.com/file/d/1S5F-8JANiL0Asf7e7gXf3Cp2RKMI-La1/view?usp=drive_link
+
 ## how to run
 * Run tdtEEGgui.m to generate a GUI panel
 
-* Click Open Folder to open the data folder
+* Click Open Folder to open the data folder (try with downloaded sample data)
 
 * Change parameters if needed (e.g. EEG and/or photometry channel, process time window, EEG/EMG filters)
 
