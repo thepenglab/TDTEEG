@@ -1,0 +1,23 @@
+%plot power spectrum
+[tLen,pLen]=size(specDat.p);
+f=linspace(specDat.fsRange(1),specDat.fsRange(2),pLen);
+figure;
+plot(f,mean(specDat.p));
+xlabel('Frequency (Hz)');
+ylabel('Power');
+figure;
+subplot(3,1,1);
+idx=state==0;
+plot(f,mean(specDat.p(idx,:)));
+xlabel('Frequency (Hz)');
+ylabel('wake power');
+subplot(3,1,2);
+idx=state==1;
+plot(f,mean(specDat.p(idx,:)));
+xlabel('Frequency (Hz)');
+ylabel('NREM sleep power');
+subplot(3,1,3);
+idx=state==2;
+plot(f,mean(specDat.p(idx,:)));
+xlabel('Frequency (Hz)');
+ylabel('REM sleep power');
